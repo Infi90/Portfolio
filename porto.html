@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Portfolio Adrian Kordek</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio frontend developer">
+        <meta name="keywords" content="portfolio, frontend, developer, html, css, javascript">
+        <meta name="author" content="Adrian Kordek">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+        <style>
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                background-color: #272727;
+                color: silver;
+                padding: 0;
+                margin: 0;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            nav {
+                width: 100%;
+                height: 50px;
+                background-color:white;
+                position: sticky;
+                margin: 0;
+                padding: 5px 0;
+                top: 0;
+                left: 0;
+                right: 0;
+                box-shadow: 0 10px 10px 0 rgba(0,0,0,0.3);
+                z-index: 1;
+            }
+
+            nav ul {
+                display: flex;
+                width: 80%;
+                margin: auto;
+                padding: 10px 10px 10px 10px;
+                justify-content: space-evenly;
+                list-style: none;
+                font-size: 1.5rem;;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: black;
+                opacity: 0.7;
+            }
+
+            nav ul li a:hover {
+                color: #5a8bac;
+                opacity: 1;
+                text-decoration: underline overline;
+                transition: all 1s;
+            }
+
+            section {
+                margin: auto;
+            }
+
+            .sectio1, .sectio2  {
+                width: 75%;
+                margin: auto;
+            }
+
+            .sectio2 {
+                background-color: black;
+            }
+
+            #welcome {
+                width: 100%;
+                height: 300px;
+                background-image: url("https://cdn.pixabay.com/photo/2017/11/02/10/37/binary-2910663__340.jpg");
+                background-size: cover;
+                background-position-y: center;
+            }
+
+            .wel1 {
+                display: flex;
+                justify-content: space-evenly;
+                margin: 5%;
+            }
+
+            .wel2 {
+                font-size: 2rem;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                vertical-align: middle;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 2rem;
+                padding: 30px;
+            }
+
+            .about1 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .about2, .about3 {
+                margin: 30px;
+            }
+
+            #myskills {
+                background-color: black;
+            }
+
+            .skills2 {
+                padding: 2rem;
+                text-align: center;
+            }
+
+            .skills2 progress {
+                background-color: white;
+                border: 1px solid white;
+            }
+
+            .skills {
+                display: flex;
+                flex-wrap: wrap;
+                width: 80%;
+                justify-content: center;
+                margin: auto;
+            }
+
+            .skillname {
+                font-family: Verdana;
+                font-weight: bold;
+            }
+
+            .projects1 {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .box {
+                margin: 10px;
+                padding: 5px;
+                background-color: rgb(37, 83, 57);
+                color: silver;
+                border-radius: 5px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+            }
+            .box:hover {
+                transform: scale(1.07);
+                transition: all 1s;
+                background-color: rgb(128, 94, 0);
+            }
+
+            .box img {
+                width: 400px;
+            }
+
+            #contactme {
+                margin: auto;
+                background-color: black;
+            }
+
+            .contact1 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                text-align: center;
+                margin: auto;
+            }
+
+            .cont a {
+                text-decoration: none;
+                color: silver;
+            }
+
+            footer {
+                justify-content: center;
+                text-align: center;
+                padding: 30px;
+                background-color: black;
+            }
+
+            .foot {
+                opacity: 0.5;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <main>
+
+            <nav class="bar">
+                <ul>
+                    <li> <a href="#welcome">Wel_come</a></li>
+                    <li> <a href="#aboutme">About_me</a></li>
+                    <li> <a href="#myskills">My_skills</a></li>
+                    <li> <a href="#myprojects">My_projects</a></li>
+                    <li> <a href="#contactme">Contact_me</a></li>
+                </ul>
+            </nav>
+
+            <section>
+
+                <div id="welcome"></div>
+                <div class="wel1">
+                    <div class="wel2"><h1><br>Hello World !!!<br>I'm frontend developer</h1></div>
+                    <div class="wel2">
+                        <img src="https://cdn.pixabay.com/photo/2021/04/05/14/54/meerkats-6153748__340.jpg" alt="">
+                    </div>
+                </div>
+
+
+                <div id="aboutme">
+                <div class="sectio1">
+                    <h2>About_me</h2>
+                        <div class="about1">
+                            <div class="about2">
+                                <img src="https://cdn.pixabay.com/photo/2021/04/05/14/54/meerkats-6153748__340.jpg" alt="">
+                            </div>
+                            <div class="about3">
+                                <p>I am Adrian</p>
+                                <p>I'm front-end developer</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, modi suscipit alias officiis enim inventore distinctio nihil unde, ipsam repellendus at est nulla dolorem consequatur error odit. Impedit placeat praesentium ipsum doloremque libero quo rerum? Sunt, mollitia. Dignissimos molestias doloremque, totam atque officia impedit quam. Ipsam temporibus odit provident id!</p>
+                            </div>
+                        </div>
+                </div>
+                </div>
+
+                
+                <div id="myskills">
+                <div class="sectio2">
+                    <h2>My_skills</h2>
+                    <div class="skills">
+                        <div class="skills2">
+                            <p><i class="fab fa-html5 fa-3x"></i></p>
+                            <p class="skillname"> HTML5 </p>
+                            <p><progress value="60" max="100"></p>
+                        </div>
+                        <div class="skills2">
+                            <p><i class="fab fa-css3 fa-3x"></i></p>
+                            <p class="skillname"> CSS3 </p>
+                            <p><progress value="50" max="100"></p>
+                        </div>
+                        <div class="skills2">
+                            <p><i class="fab fa-js fa-3x"></i></p>
+                            <p class="skillname"> JavaScript </p>
+                            <p><progress value="20" max="100"></p>
+                        </div>
+                        <div class="skills2">
+                            <p><i class="fab fa-react fa-3x"></i></p>
+                            <p class="skillname"> React </p>
+                            <p><progress value="10" max="100"></p>
+                        </div>
+                        <div class="skills2">
+                            <p><i class="fab fa-angular fa-3x"></i></p>
+                            <p class="skillname"> Angular </p>
+                            <p><progress value="5" max="100"></p>
+                        </div>
+                        <div class="skills2">
+                            <p><i class="fab fa-bootstrap fa-3x"></i></p>
+                            <p class="skillname"> Bootstrap </p>
+                            <p><progress value="5" max="100"></p>
+                        </div>
+                        <div class="skills2">
+                            <p><i class="fab fa-sass fa-3x"></i></p>
+                            <p class="skillname"> Sass </p>
+                            <p><progress value="5" max="100"></p>
+                        </div>
+                        <div class="skills2">
+                            <p><i class="fab fa-python fa-3x"></i></p>
+                            <p class="skillname"> Python </p>
+                            <p><progress value="15" max="100"></p>
+                        </div>
+                        <div class="skills2">
+                            <p><i class="fab fa-php fa-3x"></i></p>
+                            <p class="skillname"> PHP </p>
+                            <p><progress value="5" max="100"></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div id="myprojects">
+                <div class="sectio1">
+                    <h2>My_Projects</h2>
+                    <div class="projects1">
+                        <div class="box">
+                            <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_960_720.jpg">
+                            <div>Coming Soon</div>
+                        </div>
+                        <div class="box">
+                            <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_960_720.jpg">
+                            <div>Coming Soon</div>
+                        </div>
+                        <div class="box">
+                            <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_960_720.jpg">
+                            <div>Coming Soon</div>
+                        </div>
+                        <div class="box">
+                            <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_960_720.jpg">
+                            <div>Coming Soon</div>
+                        </div>
+                        <div class="box">
+                            <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_960_720.jpg">
+                            <div>Coming Soon</div>
+                        </div>
+                        <div class="box">
+                            <img src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_960_720.jpg">
+                            <div>Coming Soon</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div id="contactme">
+                <div class="sectio2">
+                    <h2>Contact_me</h2>
+                    <div class="contact1">
+                        <div class="cont">
+                            <a href="mailto:infiak@gmail.com"><p><i class="fas fa-envelope fa-3x"></i></p>
+                            <p class="nameo"> Email </p></a>
+                        </div>
+                
+                        <div class="cont">
+                            <a href="https://www.linkedin.com/in/adriankordek90" target="_blank"><p><i class="fab fa-linkedin fa-3x"></i></p>
+                            <p class="nameo"> LinkedIn </p></a>
+                        </div>
+
+                        <div class="cont">
+                            <a href="https://github.com/Infi90" target="_blank"><p><i class="fab fa-github fa-3x"></i></p>
+                            <p class="nameo"> GitHub </p></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <footer>
+                    <div class="foot">&copy; Adrian Kordek 2021</div>
+                </footer>
+
+            </section>
+
+        </main>
+
+    </body>
+</html>
